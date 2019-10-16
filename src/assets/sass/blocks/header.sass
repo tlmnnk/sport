@@ -8,24 +8,37 @@
         display: inline-block
         position: relative
         z-index: 2
+        cursor: pointer
         &-span
+            content: ''
             height: 3px
             width: 30px
             margin-bottom: 8px
             display: block
             background-color: #fff
+            transition: transform .5s ease
+            &--active
+                .header__hamburger-span:first-child
+                    transform: translateY(12px) rotate(135deg)
+                .header__hamburger-span:last-child
+                    transform: translateY(-12px) rotate(-135deg)
+                .header__hamburger-span:nth-child(2)
+                    transform: scale(0)
+
     &-block
         display: flex
         justify-content: space-between
     &__logo
 
         &-link
+
             font-size: 30px
             color: #fff
             text-decoration: none
             font-weight: 700
         &--span
             color: #c11325
+
 
         &--span
 .nav-menu
@@ -36,14 +49,16 @@
     background-color: #c11325
     top: 0
     right: 0
+    transition: transform .5s ease
+    transform: translateX(100%)
+    &--open
+        transform: translateX(0)
 
     &__item
-        margin-bottom: 40px
+
         display: block
-
-
         a
-            padding: 0 100px
+            padding: 10px 50px
             color: #fff
             display: block
             position: relative
@@ -58,7 +73,7 @@
                 left: 0
                 top: 0
                 background-color: #000
-                opacity: .5
-                transition: width 1s ease
+                opacity: .2
+                transition: width .5s ease
             &:hover:before
                 width: 100%
