@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.min.css">
     
     <!-- Useful meta tags -->
@@ -18,7 +19,14 @@
     <title>HomePage</title>
 </head>
 <body>
+<svg style="display: none">
+    <symbol id="down" viewBox="0 0 512 512">
+        <g id="down">
+            <path d="m256 512c-68.378906 0-132.667969-26.628906-181.019531-74.980469-48.351563-48.351562-74.980469-112.640625-74.980469-181.019531s26.628906-132.667969 74.980469-181.019531c48.351562-48.351563 112.640625-74.980469 181.019531-74.980469s132.667969 26.628906 181.019531 74.980469c48.351563 48.351562 74.980469 112.640625 74.980469 181.019531s-26.628906 132.667969-74.980469 181.019531c-48.351562 48.351563-112.640625 74.980469-181.019531 74.980469zm0-472c-119.101562 0-216 96.898438-216 216s96.898438 216 216 216 216-96.898438 216-216-96.898438-216-216-216zm138.285156 182-28.285156-28.285156-110 110-110-110-28.285156 28.285156 138.285156 138.285156zm0 0"/>
+        </g>
 
+    </symbol>
+</svg>
 <div class="header">
     <div class="container">
         <div class="header-block">
@@ -52,6 +60,72 @@
         <div class="promo__container">
             <h1 class="promo__title">IT'S <span class="promo__title--red">GYM</span> TIME. LET'S GO</h1>
             <h1 class="promo__title">WE ARE READY TO <span class="promo__title--red">FIT YOU</span></h1>
+        </div>
+        <a class="promo__down" href="#about">
+            <svg class="promo__down-icon">
+                <use xlink:href="#down"></use>
+            </svg>
+        </a>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container">
+        <div class="about__content">
+            <div class="box">
+                <div class="box__inner">
+                    <div class="box__inner-img">
+                        <img src="assets/img/about1.jpg" alt="">
+                    </div>
+
+                    <div class="box__inner-text">
+                            <h4>Best Training</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore sset dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                            </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box__inner">
+                    <div class="box__inner-img">
+                        <img src="assets/img/about2.jpg" alt="">
+                    </div>
+                        <div class="box__inner-text">
+                            <h4>Best Training</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore sset dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                            </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box__inner">
+                    <div class="box__inner-img">
+                        <img src="assets/img/about3.jpg" alt="">
+                    </div>
+                        <div class="box__inner-text">
+                            <h4>Build Perfect Body</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore sset dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.
+                            </p>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="service">
+    <div class="container">
+        <div class="service__content">
+            <div class="service__box">
+                
+            </div>
         </div>
     </div>
 </section>
